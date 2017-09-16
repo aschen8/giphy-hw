@@ -37,6 +37,7 @@ $(function() {
          $("body").append(`<button name=${i}>${i}</button>`);
        })
 
+
         $("button").click(function(response){
 
 
@@ -61,7 +62,16 @@ $(function() {
 //calling the playing gif url
 //now i need to contain the playing gif url in a click event and then replace the ^still url
 
-              $("body").append(`<img src=${response.data.image_original_url} />`);   
+      //  $("body") onclick = 
+
+//having trouble implementing below .onclick response to call playing gifs
+// $("button").onclick(function(response){
+
+
+      $("body").append(`<img src=${response.data.image_original_url} />`);   
+//  })
+
+
             })
           });
 
